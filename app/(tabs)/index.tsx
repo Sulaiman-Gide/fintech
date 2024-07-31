@@ -8,17 +8,17 @@ export default function onboarding() {
   return (
     <>
       <StatusBar
-        backgroundColor="#fff"
-        barStyle="dark-content" // Here is where you change the font-color
+        backgroundColor="#000000"
+        barStyle="light-content"
       />
       <SafeAreaView style={tailwind.style({ flex: 1, backgroundColor: '#0B0B0B'})}>
-        <View style={tailwind.style('items-center justify-end', { flex: .6})}>
+        <View style={tailwind.style('items-center justify-end', { flex: .5})}>
           <Image
             source={require('@/assets/images/photo-1.png')}
             style={tailwind.style('w-3/4 h-3/4', { objectFit: 'contain' })}
           />
         </View>
-        <View style={tailwind.style('w-full mt-12 px-7', {flex: .4})}>
+        <View style={tailwind.style('w-full mt-12 px-7', {flex: .6})}>
             <TouchableOpacity 
               onPress={() => router.push('/home')}
               style={tailwind.style('mx-auto w-4/5', { backgroundColor: '#FB5521', borderRadius: 13, })}>
